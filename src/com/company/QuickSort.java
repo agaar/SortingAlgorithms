@@ -5,7 +5,6 @@ class QuickSort {
     void sort(int table[], int left, int right) {
 
         int i, j, v, temp;
-
         i = left;
         j = right;
         v = table[(left + right) / 2];

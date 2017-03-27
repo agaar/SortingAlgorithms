@@ -8,7 +8,6 @@ public class Main {
         int[] inputArr = {5, 3, 6, 2, 5, 1, 2, 23, -52, 121, 358, 0, -76, 49, 853, 342, 258, 64, 754, 19, 94, 63, 15, 25, 58, 36, 24, 85, 254, 314, 252, 108};
         long before, after;
 
-
         System.out.println("SORTOWANIE PRZEZ SCALANIE: ");
         int[] msArray = inputArr.clone();
         System.out.println("Przed sortowaniem: " + Arrays.toString(msArray));
