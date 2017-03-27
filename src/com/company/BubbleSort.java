@@ -3,7 +3,7 @@ package com.company;
 
 class BubbleSort {
 
-    void sort(int table[]) {
+    static void bubbleSort(int table[]) {
         int size = table.length;
         int j, temp;
         boolean swap = true;

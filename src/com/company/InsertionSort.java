@@ -2,7 +2,7 @@ package com.company;
 
 class InsertionSort {
 
-    public void sort(int[] table) {
+    static void insertionSort(int[] table) {
         int i, j, newValue;
         for (i = 1; i < table.length; i++) {
             newValue = table[i];

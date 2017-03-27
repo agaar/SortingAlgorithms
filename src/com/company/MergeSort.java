@@ -2,20 +2,20 @@ package com.company;
 
 class MergeSort {
 
-    void sort(int table[], int start, int end) {
+    static void mergeSort(int table[], int start, int end) {
 
         if (start < end) {
             int middle = (start + end) / 2;
             // Below step sorts the left side of the array
-            sort(table, start, middle);
+            mergeSort(table, start, middle);
             // Below step sorts the right side of the array
-            sort(table, middle + 1, end);
+            mergeSort(table, middle + 1, end);
             // Now merge both sides
             merge(table, start, middle, end);
         }
     }
 
-    private void merge(int[] table, int start, int middle, int end) {
+    private static void merge(int[] table, int start, int middle, int end) {
         int[] tempMergArr = new int[end - start + 1];
         int i = start;
         int j = middle + 1;

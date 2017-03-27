@@ -2,7 +2,7 @@ package com.company;
 
 class SelectionSort {
 
-    void sort(int[] table) {
+    static void selectionSort(int[] table) {
 
         for (int i = 0; i < table.length - 1; i++) {
             int index = i;

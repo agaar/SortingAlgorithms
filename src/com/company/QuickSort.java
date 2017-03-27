@@ -2,7 +2,7 @@ package com.company;
 
 class QuickSort {
 
-    void sort(int table[], int left, int right) {
+    static void quickSort(int table[], int left, int right) {
 
         int i, j, v, temp;
         i = left;
@@ -22,8 +22,8 @@ class QuickSort {
             }
         } while (i <= j);
         if (j > left)
-            sort(table, left, j);
+            quickSort(table, left, j);
         if (i < right)
-            sort(table, i, right);
+            quickSort(table, i, right);
     }
 }

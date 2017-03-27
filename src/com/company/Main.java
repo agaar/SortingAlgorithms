@@ -2,6 +2,12 @@ package com.company;
 
 import java.util.Arrays;
 
+import static com.company.BubbleSort.bubbleSort;
+import static com.company.InsertionSort.insertionSort;
+import static com.company.MergeSort.mergeSort;
+import static com.company.QuickSort.quickSort;
+import static com.company.SelectionSort.selectionSort;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,8 +19,7 @@ public class Main {
         System.out.println("Przed sortowaniem: " + Arrays.toString(msArray));
         System.out.println("Tablica jest posortowana: " + isSorted(msArray));
         before = System.nanoTime();
-        MergeSort ms = new MergeSort();
-        ms.sort(msArray, 0, msArray.length - 1);
+        mergeSort(msArray, 0, msArray.length - 1);
         after = System.nanoTime();
         System.out.println("Po sortowaniu: " + Arrays.toString(msArray));
         System.out.println("Czas w nanosekundach: " + (after - before));
@@ -26,8 +31,7 @@ public class Main {
         System.out.println("Przed sortowaniem: " + Arrays.toString(bsArray));
         System.out.println("Tablica jest posortowana: " + isSorted(bsArray));
         before = System.nanoTime();
-        BubbleSort bs = new BubbleSort();
-        bs.sort(bsArray);
+        bubbleSort(bsArray);
         after = System.nanoTime();
         System.out.println("Po sortowaniu: " + Arrays.toString(bsArray));
         System.out.println("Czas w nanosekundach: " + (after - before));
@@ -39,8 +43,7 @@ public class Main {
         System.out.println("Przed sortowaniem: " + Arrays.toString(qsArray));
         System.out.println("Tablica jest posortowana: " + isSorted(qsArray));
         before = System.nanoTime();
-        QuickSort qs = new QuickSort();
-        qs.sort(qsArray, 0, qsArray.length - 1);
+        quickSort(qsArray, 0, qsArray.length - 1);
         after = System.nanoTime();
         System.out.println("Po sortowaniu: " + Arrays.toString(qsArray));
         System.out.println("Czas w nanosekundach: " + (after - before));
@@ -52,8 +55,7 @@ public class Main {
         System.out.println("Przed sortowaniem: " + Arrays.toString(ssArray));
         System.out.println("Tablica jest posortowana: " + isSorted(ssArray));
         before = System.nanoTime();
-        SelectionSort ss = new SelectionSort();
-        ss.sort(ssArray);
+        selectionSort(ssArray);
         after = System.nanoTime();
         System.out.println("Po sortowaniu: " + Arrays.toString(ssArray));
         System.out.println("Czas w nanosekundach: " + (after - before));
@@ -65,8 +67,7 @@ public class Main {
         System.out.println("Przed sortowaniem: " + Arrays.toString(isArray));
         System.out.println("Tablica jest posortowana: " + isSorted(isArray));
         before = System.nanoTime();
-        InsertionSort is = new InsertionSort();
-        is.sort(isArray);
+        insertionSort(isArray);
         after = System.nanoTime();
         System.out.println("Po sortowaniu: " + Arrays.toString(isArray));
         System.out.println("Czas w nanosekundach: " + (after - before));
